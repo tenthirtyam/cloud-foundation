@@ -12,4 +12,4 @@ These are examples are not an officially supported by VMware. These can be used 
 ### Contributors
 Current contributors:
 
-* Ryan Johnson- Staff II Architect, VMwware HCIBU \[[Twitter](https://twitter.com/tenthirtyam)\] \[[Blog](https://tenthirtyam.org)\]
+* Ryan Johnson- Staff II Architect, VMware HCIBU \[[Twitter](https://twitter.com/tenthirtyam)\] \[[Blog](https://tenthirtyam.org)\]
