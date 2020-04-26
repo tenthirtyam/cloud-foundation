@@ -1,0 +1,129 @@
+{
+  "domainName": "sfo-w01",  
+  "vcenterSpec": {  
+    "name": "sfo-w01-vc01",  
+    "networkDetailsSpec": {  
+       "ipAddress": "172.16.11.64",  
+       "dnsName": "sfo-w01-vc01.sfo.rainpole.io",  
+       "gateway": "172.16.11.1",  
+       "subnetMask": "255.255.255.0"
+     },  
+     "rootPassword": "vcenter_server_root_password",  
+     "datacenterName": "sfo-w01-dc01"  
+   },  
+   "computeSpec": {  
+      "clusterSpecs": [ {  
+          "name": "sfo-w01-cl01",  
+          "hostSpecs": [ {  
+              "id": "guid_of_esxi_host",
+              "license":"vsphere_esxi_license_key",
+              "hostNetworkSpec": {  
+                 "vmNics": [ {  
+                     "id": "vmnic0",  
+                     "vdsName": "sfo-w01-cl01-vds01"  
+                  }, {  
+                     "id": "vmnic1",  
+                     "vdsName": "sfo-w01-cl01-vds01"  
+                  }, { 
+                     "id": "vmnic2",  
+                     "vdsName": "sfo-w01-cl01-vds02" 
+                  }, {  
+                     "id": "vmnic3",  
+                     "vdsName": "sfo-w01-cl01-vds02"  
+                  } ]  
+               }  
+            }, {  
+              "id": "guid_of_esxi_host",
+              "license":"vsphere_esxi_license_key",
+              "hostNetworkSpec": {  
+                 "vmNics": [ {  
+                     "id": "vmnic0",  
+                     "vdsName": "sfo-w01-cl01-vds01"  
+                  }, {  
+                     "id": "vmnic1",  
+                     "vdsName": "sfo-w01-cl01-vds01"  
+                  }, { 
+                     "id": "vmnic2",  
+                     "vdsName": "sfo-w01-cl01-vds02" 
+                  }, {  
+                     "id": "vmnic3",  
+                     "vdsName": "sfo-w01-cl01-vds02"  
+                  } ]  
+               }  
+            }, {  
+              "id": "guid_of_esxi_host",
+              "license":"vsphere_esxi_license_key",
+              "hostNetworkSpec": {  
+                 "vmNics": [ {  
+                     "id": "vmnic0",  
+                     "vdsName": "sfo-w01-cl01-vds01"  
+                  }, {  
+                     "id": "vmnic1",  
+                     "vdsName": "sfo-w01-cl01-vds01"  
+                  }, { 
+                     "id": "vmnic2",  
+                     "vdsName": "sfo-w01-cl01-vds02" 
+                  }, {  
+                     "id": "vmnic3",  
+                     "vdsName": "sfo-w01-cl01-vds02"  
+                  } ] 
+               } 
+           } ],     
+    "datastoreSpec": {  
+        "vsanDatastoreSpec": {  
+            "failuresToTolerate": 1,  
+            "licenseKey": "vsan_license_key",
+            "datastoreName": "sfo-w01-cl01-ds-vsan01" 
+         }  
+     },  
+     "networkSpec": { 
+         "vdsSpecs": [ { 
+             "name": "sfo-w01-cl01-vds01", 
+             "portGroupSpecs": [ {  
+                 "name": "sfo-w01-cl01-vds01-pg-mgmt", 
+                 "transportType": "MANAGEMENT" 
+             }, { 
+                 "name": "sfo-w01-cl01-vds01-pg-vsan",  
+                 "transportType": "VSAN" 
+             }, {  
+                 "name": "sfo-w01-cl01-vds01-pg-vmotion", 
+                 "transportType": "VMOTION" 
+             } ] 
+          },  
+          {  
+             "name": "sfo-w01-cl01-vds02", 
+             "portGroupSpecs": [ { 
+                "name": "sfo-w01-cl01-vds01-pg-public", 
+                "transportType": "PUBLIC"  } ] 
+           } 
+        ],  
+        "nsxClusterSpec": { 
+           "nsxVClusterSpec": {  
+              "vlanId": 1634,  
+              "vdsNameForVxlanConfig": "sfo-w01-cl01-vds01"  
+            }  
+          }  
+        }  
+      } ] 
+   }, 
+  "nsxVSpec" : {
+    "nsxManagerSpec" : {
+      "name" : "sfo-w01-nsx01",
+      "networkDetailsSpec" : {
+        "ipAddress" : "172.16.11.66",
+        "dnsName" : "sfo-w01-nsx01.sfo.rainpole.io",
+        "gateway" : "172.16.11.1",
+        "subnetMask" : "255.255.255.0"
+      }
+    },
+    "nsxVControllerSpec" : {
+      "nsxControllerIps" : [ "172.16.11.121", "172.16.11.122", "172.16.11.123" ],
+      "nsxControllerPassword" : "Vnsxv_controller_admin_password",
+      "nsxControllerGateway" : "172.16.11.1",
+      "nsxControllerSubnetMask" : "255.255.255.0"
+    },
+    "licenseKey" : "nsxv_datacenter_license_key",
+    "nsxManagerAdminPassword" : "nsxv_manager_admin_password",
+    "nsxManagerEnablePassword" : "nsxv_manager_enable_password"
+  }
+}

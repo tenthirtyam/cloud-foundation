@@ -1,0 +1,80 @@
+{
+  "nsxVClusterSpec": {
+    "vdsNameForVxlanConfig": "sfo-w01-cl02-vds02",
+    "vlanId": 1634
+  },
+  "hostSpec": {
+    "hostSystemSpec": [
+      {
+        "license": "vsphere_esxi_license_key",
+        "id": "guid_of_esxi_host",
+        "vmnicToVdsNameMap": {
+             "vmnic0": "sfo-w01-cl02-vds01",
+             "vmnic1": "sfo-w01-cl02-vds01",
+             "vmnic2": "sfo-w01-cl02-vds02",
+             "vmnic3": "sfo-w01-cl02-vds02"
+            }
+      },
+      {
+        "license": "vsphere_esxi_license_key",
+        "id": "guid_of_esxi_host",
+        "vmnicToVdsNameMap": {
+             "vmnic0": "sfo-w01-cl02-vds01",
+             "vmnic1": "sfo-w01-cl02-vds01",
+             "vmnic2": "sfo-w01-cl02-vds02",
+             "vmnic3": "sfo-w01-cl02-vds02"
+            }
+      },
+      {
+        "license": "vsphere_esxi_license_key",
+        "id": "guid_of_esxi_host",
+        "vmnicToVdsNameMap": {
+             "vmnic0": "sfo-w01-cl02-vds01",
+             "vmnic1": "sfo-w01-cl02-vds01",
+             "vmnic2": "sfo-w01-cl02-vds02",
+             "vmnic3": "sfo-w01-cl02-vds02"
+            }
+      }
+    ]
+  },
+  "clusterName": "sfo-w01-cl02",
+  "highAvailabilitySpec": {
+    "enabled": true
+  },
+  "domainId": "guid_of_domain",
+  "datastoreSpec": {
+    "vsanDatastoreSpec": {
+      "license": "vsan_license_key",
+      "ftt": 1,
+      "name": "sfo-w01-cl02-ds-vsan01"
+    }
+  },
+  "vdsSpec": [
+    {
+      "name": "sfo-w01-cl02-vds01",
+      "portGroupSpec": [
+        {
+          "name": "sfo-w01-cl02-vds01-pg-mgmt",
+          "transportType": "MANAGEMENT"
+        },
+        {
+          "name": "sfo-w01-cl02-vds01-pg-vmotion",
+          "transportType": "VMOTION"
+        },
+        {
+          "name": "sfo-w01-cl02-vds01-pg-vsan",
+          "transportType": "VSAN"
+        } 
+      ] 
+    },
+    {
+       "name": "sfo-w01-cl02-vds02",
+       "portGroupSpec": [
+        {
+          "name": "sfo-w01-cl02-vds02-ext",
+          "transportType": "PUBLIC"
+        }
+        ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "clusterExpansionSpec" : {
+    "hostSpecs" : [ {
+      "id" : "guid_of_esxi_host",
+      "license": "vsphere_esxi_license_key",
+      "hostNetworkSpec" : {
+        "vmNics" : [ {
+          "id" : "vmnic0",
+          "vdsName" : "sfo-w01-cl01-vds01" 
+        }, {
+          "id" : "vmnic1",
+          "vdsName" : "sfo-w01-cl01-vds01" 
+        }, {
+          "id" : "vmnic2",
+          "vdsName" : "sfo-w01-cl01-vds02" 
+        }, {
+          "id" : "vmnic3",
+          "vdsName" : "sfo-w01-cl01-vds02" 
+        } ] 
+      } 
+    } ] 
+  }
+}
