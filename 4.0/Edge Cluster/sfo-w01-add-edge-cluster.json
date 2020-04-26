@@ -1,0 +1,78 @@
+{
+   "edgeClusterName":"sfo-w01-ec01",
+   "edgeClusterType":"NSX-T",
+   "edgeRootPassword":"VMw@re123!VMw@re123!",
+   "edgeAdminPassword":"VMw@re123!VMw@re123!",
+   "edgeAuditPassword":"VMw@re123!VMw@re123!",
+   "edgeFormFactor":"MEDIUM",
+   "tier0ServicesHighAvailability":"ACTIVE_ACTIVE",
+   "mtu":9000,
+   "asn":65000,
+   "tier0RoutingType":"EBGP",
+   "tier0Name": "sfo-w01-ec01-t0-gw01",
+   "tier1Name": "sfo-w01-ec01-t1-gw01",
+   "edgeClusterProfileType": "CUSTOM",
+   "edgeClusterProfileSpec": 
+    {  "bfdAllowedHop": 255,
+       "bfdDeclareDeadMultiple": 3,
+       "bfdProbeInterval": 1000,
+       "edgeClusterProfileName": "sfo-ecp01",
+       "standbyRelocationThreshold": 30 
+    },
+   "edgeNodeSpecs":[
+      {
+         "edgeNodeName":"sfo-w01-en01.sfo.rainpole.io",
+         "clusterId":"fc06d73c-455c-480b-a854-714ede464df7",
+         "managementIP":"172.17.1.69/24",
+         "managementGateway":"172.17.1.1",
+         "edgeTepGateway":"172.17.8.253",
+         "edgeTep1IP":"172.17.8.200/24",
+         "edgeTep2IP":"172.17.8.201/24",
+         "edgeTepVlan":"2262",
+         "interRackCluster": "false",
+         "uplinkNetwork":[
+            {
+                "uplinkVlan":2258,
+                "uplinkInterfaceIP":"172.17.4.2/24",
+                "peerIP":"172.17.4.1/24",
+                "asnPeer":65001,
+                "bgpPeerPassword":"VMw@re1!"
+            },
+            {
+                "uplinkVlan":2259,
+                "uplinkInterfaceIP":"172.17.5.2/24",
+                "peerIP":"172.17.5.1/24",
+                "asnPeer":65001,
+                "bgpPeerPassword":"VMw@re1!"
+            }
+         ]
+      },
+      {
+         "edgeNodeName":"sfo-w01-en02.sfo.rainpole.io",
+         "clusterId":"fc06d73c-455c-480b-a854-714ede464df7",
+         "managementIP":"172.17.1.70/24",
+         "managementGateway":"172.17.1.1",
+         "edgeTepGateway":"172.17.8.253",
+         "edgeTep1IP":"172.17.8.202/24",
+         "edgeTep2IP":"172.17.8.203/24",
+         "edgeTepVlan":"2262",
+         "interRackCluster": "false",
+         "uplinkNetwork":[
+            {
+                "uplinkVlan":2258,
+                "uplinkInterfaceIP":"172.17.4.3/24",
+                "peerIP":"172.17.4.1/24",
+                "asnPeer":65001,
+                "bgpPeerPassword":"VMw@re1!"
+            },
+            {
+                "uplinkVlan":2259,
+                "uplinkInterfaceIP":"172.17.5.3/24",
+                "peerIP":"172.17.5.1/24",
+                "asnPeer":65001,
+                "bgpPeerPassword":"VMw@re1!"
+            }
+         ]
+      }
+   ]
+}

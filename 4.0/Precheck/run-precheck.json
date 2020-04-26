@@ -1,0 +1,6 @@
+{
+    "resources" : [ {
+      "resourceId" : "guid_of_domain",
+      "type" : "DOMAIN"
+    } ]
+}

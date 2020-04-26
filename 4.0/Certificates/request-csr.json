@@ -1,0 +1,30 @@
+{
+    "csrGenerationSpec": {
+        "country": "US",
+        "email": "cloud@rainpole.io",
+        "keyAlgorithm": "RSA",
+        "keySize": "2048",
+        "locality": "San Francisco",
+        "organization": "Rainpole",
+        "organizationUnit": "Cloud Engineering",
+        "state": "CA"
+    },
+    "resources": [
+		{
+			"fqdn": "sfo-vcf01.sfo.rainpole.io",
+			"name": "sfo-vcf01",
+			"resourceId": "guid_of_sddc_manager",
+			"type": "SDDC_MANAGER"
+		},{
+			"fqdn": "sfo-m01-nsx01.sfo.rainpole.io",
+			"name": "sfo-m01-nsx01",
+			"resourceId": "guid_of_nsxt_manager",
+			"type": "NSXT_MANAGER"
+		},{
+			"fqdn": "sfo-m01-vc01.sfo.rainpole.io",
+			"name": "sfo-m01-vc01",
+			"resourceId": "guid_fo_vcenter_server",
+			"type": "VCENTER"
+		}
+	]
+}

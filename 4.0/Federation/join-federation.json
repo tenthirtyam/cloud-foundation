@@ -1,0 +1,18 @@
+{
+    "controllerFqdn" : "sfo-vcf01.sfo.rainpole.io",
+    "joinToken" : "token_value",
+    "commonName" : "lax-vcf01.lax.rainpole.io",
+    "memberJoinDetail" : {
+      "role" : "MEMBER",
+      "fqdn" : "lax-vcf01.lax.rainpole.io",
+      "siteType" : "DATACENTER",
+      "siteName" : "Los Angeles",
+      "country" : "USA",
+      "state" : "California",
+      "city" : "Los Angeles",
+      "coordinate" : {
+        "longitude" : 34.052,
+        "latitude" : 118.244
+      }
+    }
+  }

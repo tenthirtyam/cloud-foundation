@@ -1,0 +1,5 @@
+{
+    "apiPassword": "vrslcm_api_password",
+    "fqdn": "xreg-vrslcm01.rainpole.io",
+    "sshPassword": "vrslcm_ssh_password"
+}

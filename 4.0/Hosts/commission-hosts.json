@@ -1,0 +1,35 @@
+[
+        {
+            "fqdn": "sfo01-w01-esx01.sfo.rainpole.io",
+            "username": "root",
+            "storageType": "VSAN",
+            "password": "esxi_root_password",
+            "networkPoolName": "sfo-w01-np01",
+			"networkPoolId": "guid_of_network_pool"
+        },
+        {
+            "fqdn": "sfo01-w01-esx02.sfo.rainpole.io",
+            "username": "root",
+            "storageType": "VSAN",
+            "password": "esxi_root_password",
+            "networkPoolName": "sfo-w01-np01",
+			"networkPoolId": "guid_of_network_pool"
+
+        },
+		{
+            "fqdn": "sfo01-w01-esx03.sfo.rainpole.io",
+            "username": "root",
+            "storageType": "VSAN",
+            "password": "esxi_root_password",
+            "networkPoolName": "sfo-w01-np01",
+			"networkPoolId": "guid_of_network_pool"
+        },
+		{
+            "fqdn": "sfo01-w01-esx04.sfo.rainpole.io",
+            "username": "root",
+            "storageType": "VSAN",
+            "password": "esxi_root_password",
+            "networkPoolName": "sfo-w01-np01",
+			"networkPoolId": "guid_of_network_pool"
+        }
+    ]

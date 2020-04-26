@@ -1,0 +1,10 @@
+{
+    "apiPassword": "vrslcm_api_password",
+    "fqdn": "sfo-vrslcm01-sfo.rainpole.io",
+    "networkSpec": {
+        "gateway": "172.16.11.1",
+        "subnetMask": "255.255.255.0",
+        "vlanId": "1611"
+    },
+    "sshPassword": "vrslcm_ssh_password"
+}

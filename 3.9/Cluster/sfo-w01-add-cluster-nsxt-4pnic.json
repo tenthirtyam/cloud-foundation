@@ -1,0 +1,148 @@
+{
+  "computeSpec": {
+    "clusterSpecs": [
+      {
+        "advancedOptions": {
+          "evcMode": "",
+          "highAvailability": {
+            "enabled": true
+          }
+        },
+        "datastoreSpec": {
+          "vsanDatastoreSpec": {
+            "datastoreName": "sfo-w01-c102-pg-vsan01",
+            "dedupAndCompressionEnabled": false,
+            "failuresToTolerate": 1,
+            "licenseKey": "vsan_license_key"
+          }
+        },
+        "hostSpecs": [
+          {
+            "id": "guid_of_esxi_host",
+            "licenseKey": "vsphere_esxi_license_key",
+            "hostNetworkSpec": {
+              "vmNics": [
+                {
+                  "id": "vmnic0",
+                  "vdsName": "sfo-w01-c02-vds01"
+                },
+                {
+                  "id": "vmnic1",
+                  "vdsName": "sfo-w01-c02-vds01"
+                },
+                {
+                  "id": "vmnic2",
+                  "moveToNvds": true
+                },
+                {
+                  "id": "vmnic3",
+                  "moveToNvds": true
+                }
+              ]
+            }
+          },
+          {
+            "id": "guid_of_esxi_host",
+            "licenseKey": "vsphere_esxi_license_key",
+            "hostNetworkSpec": {
+              "vmNics": [
+                {
+                  "id": "vmnic0",
+                  "vdsName": "sfo-w01-c02-vds01"
+                },
+                {
+                  "id": "vmnic1",
+                  "vdsName": "sfo-w01-c02-vds01"
+                },
+                {
+                  "id": "vmnic2",
+                  "moveToNvds": true
+                },
+                {
+                  "id": "vmnic3",
+                  "moveToNvds": true
+                }
+              ]
+            }
+          },
+          {
+            "id": "guid_of_esxi_host",
+            "licenseKey": "vsphere_esxi_license_key",
+            "hostNetworkSpec": {
+              "vmNics": [
+                {
+                  "id": "vmnic0",
+                  "vdsName": "sfo-w01-c02-vds01"
+                },
+                {
+                  "id": "vmnic1",
+                  "vdsName": "sfo-w01-c02-vds01"
+                },
+                {
+                  "id": "vmnic2",
+                  "moveToNvds": true
+                },
+                {
+                  "id": "vmnic3",
+                  "moveToNvds": true
+                }
+              ]
+            }
+          },
+          {
+            "id": "guid_of_esxi_host",
+            "licenseKey": "vsphere_esxi_license_key",
+            "hostNetworkSpec": {
+              "vmNics": [
+                {
+                  "id": "vmnic0",
+                  "vdsName": "sfo-w01-c02-vds01"
+                },
+                {
+                  "id": "vmnic1",
+                  "vdsName": "sfo-w01-c02-vds01"
+                },
+                {
+                  "id": "vmnic2",
+                  "moveToNvds": true
+                },
+                {
+                  "id": "vmnic3",
+                  "moveToNvds": true
+                }
+              ]
+            }
+          }
+        ],
+        "name": "sfo-w01-cl02",
+        "networkSpec": {
+          "nsxClusterSpec": {
+            "nsxTClusterSpec": {
+              "geneveVlanId": 1644
+            }
+          },
+          "vdsSpecs": [
+            {
+              "name": "sfo-w01-c102-pg-vds01",
+              "portGroupSpecs": [
+                {
+                  "name": "sfo-w01-c102-pg-vds01-mgmt",
+                  "transportType": "MANAGEMENT"
+                },
+                {
+                  "name": "sfo-w01-c102-pg-vds01-vsan",
+                  "transportType": "VSAN"
+                },
+                {
+                  "name": "sfo-w01-c102-pg-vds01-vmotion",
+                  "transportType": "VMOTION"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "domainId": "guid_of_workload_domain"
+}

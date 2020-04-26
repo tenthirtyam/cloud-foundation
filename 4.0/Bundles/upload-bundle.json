@@ -1,0 +1,7 @@
+
+{
+  "bundleFilePath" : "/home/vcf/bundle_esxi/bundle_id.tar",
+  "manifestFilePath" : "/home/vcf/bundle_esxi/bundle_id.manifest",
+  "signatureFilePath" : "/home/vcf/bundle_esxi/bundle_id.manifest.sig"
+}
+

@@ -1,0 +1,116 @@
+{
+  "computeSpec": {
+    "clusterSpecs": [
+      {
+        "advancedOptions": {
+          "evcMode": "",
+          "highAvailability": {
+            "enabled": true
+          }
+        },
+        "datastoreSpec": {
+          "vsanDatastoreSpec": {
+            "datastoreName": "sfo-w01-cl02-ds-vsan01",
+            "dedupAndCompressionEnabled": false,
+            "failuresToTolerate": 1,
+            "licenseKey": "vsan_license_key"
+          }
+        },
+        "hostSpecs": [
+          {
+            "id": "guid_of_esxi_host",
+            "licenseKey": "vsphere_esxi_license_key",
+            "hostNetworkSpec": {
+              "vmNics": [
+                {
+                  "id": "vmnic0",
+                  "vdsName": "sfo-w01-cl02-vds01"
+                },
+                {
+                  "id": "vmnic1",
+                  "vdsName": "sfo-w01-cl02-vds01"
+                }
+              ]
+            }
+          },
+          {
+            "id": "guid_of_esxi_host",
+            "licenseKey": "vsphere_esxi_license_key",
+            "hostNetworkSpec": {
+              "vmNics": [
+                {
+                  "id": "vmnic0",
+                  "vdsName": "sfo-w01-cl02-vds01"
+                },
+                {
+                  "id": "vmnic1",
+                  "vdsName": "sfo-w01-cl02-vds01"
+                }
+              ]
+            }
+          },
+          {
+            "id": "guid_of_esxi_host",
+            "licenseKey": "vsphere_esxi_license_key",
+            "hostNetworkSpec": {
+              "vmNics": [
+                {
+                  "id": "vmnic0",
+                  "vdsName": "sfo-w01-cl02-vds01"
+                },
+                {
+                  "id": "vmnic1",
+                  "vdsName": "sfo-w01-cl02-vds01"
+                }
+              ]
+            }
+          },
+          {
+            "id": "guid_of_esxi_host",
+            "licenseKey": "vsphere_esxi_license_key",
+            "hostNetworkSpec": {
+              "vmNics": [
+                {
+                  "id": "vmnic0",
+                  "vdsName": "sfo-w01-cl02-vds01"
+                },
+                {
+                  "id": "vmnic1",
+                  "vdsName": "sfo-w01-cl02-vds01"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "sfo-w01-cl02",
+        "networkSpec": {
+          "nsxClusterSpec": {
+            "nsxTClusterSpec": {
+              "geneveVlanId": 1654
+            }
+          },
+          "vdsSpecs": [
+            {
+              "name": "sfo-w01-cl02-vds01",
+              "portGroupSpecs": [
+                {
+                  "name": "sfo-w01-cl02-vds01-pg-mgmt",
+                  "transportType": "MANAGEMENT"
+                },
+                {
+                  "name": "sfo-w01-cl02-vds01-pg-vsan",
+                  "transportType": "VSAN"
+                },
+                {
+                  "name": "sfo-w01-cl02-vds01-pg-vmotion",
+                  "transportType": "VMOTION"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "domainId": "guid_of_domain"
+}
