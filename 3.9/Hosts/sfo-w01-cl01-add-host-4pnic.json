@@ -7,11 +7,11 @@
             "vmNics": [
               {
                 "id": "vmnic0",
-                "vdsName": "sfo01-w01-c02-vds01"
+                "vdsName": "sfo01-w01-cl01-vds01"
               },
               {
                 "id": "vmnic1",
-                "vdsName": "sfo01-w01-c02-vds01"
+                "vdsName": "sfo01-w01-cl01-vds01"
               },
               {
                 "id": "vmnic2",

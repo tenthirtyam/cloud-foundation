@@ -12,6 +12,14 @@
               {
                 "id": "vmnic1",
                 "vdsName": "sfo01-w01-cl01-vds01"
+              },
+              {
+                "id": "vmnic2",
+                "vdsName": "sfo01-w01-cl01-vds02"
+              },
+              {
+                "id": "vmnic3",
+                "vdsName": "sfo01-w01-cl01-vds02"
               }
             ],
             "id": "guid_of_esxi_hosts",
