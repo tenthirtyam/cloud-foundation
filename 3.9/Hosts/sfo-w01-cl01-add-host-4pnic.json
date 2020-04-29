@@ -1,0 +1,32 @@
+{
+  "clusterUpdateSpec": {
+    "clusterExpansionSpec": {
+      "hostSpecs": [
+        {
+          "hostNetworkSpec": {
+            "vmNics": [
+              {
+                "id": "vmnic0",
+                "vdsName": "sfo01-w01-c02-vds01"
+              },
+              {
+                "id": "vmnic1",
+                "vdsName": "sfo01-w01-c02-vds01"
+              },
+              {
+                "id": "vmnic2",
+                "moveToNvds": true
+              },
+              {
+                "id": "vmnic3",
+                "moveToNvds": true
+              }
+            ],
+            "id": "guid_of_esxi_hosts",
+            "licensekey": "vsphere_esxi_licesns_key"
+          }
+        }
+      ]
+    }
+  }
+}
