@@ -3,144 +3,144 @@
 
 ## Enter Configuration
 
-`configure`
+	configure
 
 ## Define the BGP ASN and Router ID
 
-`set protocols bgp 65000 parameters router-id 192.168.3.1`
+	set protocols bgp 65000 parameters router-id 192.168.3.1
 
 ## Define the ASN and BGP Neighbors
 
-`set protocols bgp 65000 neighbor 172.27.11.2 remote-as 65001`
-`set protocols bgp 65000 neighbor 172.27.11.2 password 'VMware1!'`
-`set protocols bgp 65000 neighbor 172.27.11.2 timers holdtime 12`
-`set protocols bgp 65000 neighbor 172.27.11.2 timers keepalive 4`
-`set protocols bgp 65000 neighbor 172.27.11.3 remote-as 65001`
-`set protocols bgp 65000 neighbor 172.27.11.3 password 'VMware1!'`
-`set protocols bgp 65000 neighbor 172.27.11.3 timers holdtime 12`
-`set protocols bgp 65000 neighbor 172.27.11.3 timers keepalive 4`
-`set protocols bgp 65000 neighbor 172.27.12.2 remote-as 65001`
-`set protocols bgp 65000 neighbor 172.27.12.2 password 'VMware1!'`
-`set protocols bgp 65000 neighbor 172.27.12.2 timers holdtime 12`
-`set protocols bgp 65000 neighbor 172.27.12.2 timers keepalive 4`
-`set protocols bgp 65000 neighbor 172.27.12.3 remote-as 65001`
-`set protocols bgp 65000 neighbor 172.27.12.3 password 'VMware1!'`
-`set protocols bgp 65000 neighbor 172.27.12.3 timers holdtime 12`
-`set protocols bgp 65000 neighbor 172.27.12.3 timers keepalive 4`
+	set protocols bgp 65000 neighbor 172.27.11.2 remote-as 65001
+	set protocols bgp 65000 neighbor 172.27.11.2 password 'VMware1!'
+	set protocols bgp 65000 neighbor 172.27.11.2 timers holdtime 12
+	set protocols bgp 65000 neighbor 172.27.11.2 timers keepalive 4
+	set protocols bgp 65000 neighbor 172.27.11.3 remote-as 65001
+	set protocols bgp 65000 neighbor 172.27.11.3 password 'VMware1!'
+	set protocols bgp 65000 neighbor 172.27.11.3 timers holdtime 12
+	set protocols bgp 65000 neighbor 172.27.11.3 timers keepalive 4
+	set protocols bgp 65000 neighbor 172.27.12.2 remote-as 65001
+	set protocols bgp 65000 neighbor 172.27.12.2 password 'VMware1!'
+	set protocols bgp 65000 neighbor 172.27.12.2 timers holdtime 12
+	set protocols bgp 65000 neighbor 172.27.12.2 timers keepalive 4
+	set protocols bgp 65000 neighbor 172.27.12.3 remote-as 65001
+	set protocols bgp 65000 neighbor 172.27.12.3 password 'VMware1!'
+	set protocols bgp 65000 neighbor 172.27.12.3 timers holdtime 12
+	set protocols bgp 65000 neighbor 172.27.12.3 timers keepalive 4
 
-`set protocols bgp 65000 neighbor 172.37.11.2 remote-as 65001`
-`set protocols bgp 65000 neighbor 172.37.11.2 password 'VMware1!'`
-`set protocols bgp 65000 neighbor 172.37.11.2 timers holdtime 12`
-`set protocols bgp 65000 neighbor 172.37.11.2 timers keepalive 4`
-`set protocols bgp 65000 neighbor 172.37.11.3 remote-as 65001`
-`set protocols bgp 65000 neighbor 172.37.11.3 password 'VMware1!'`
-`set protocols bgp 65000 neighbor 172.37.11.3 timers holdtime 12`
-`set protocols bgp 65000 neighbor 172.37.11.3 timers keepalive 4`
-`set protocols bgp 65000 neighbor 172.37.12.2 remote-as 65001`
-`set protocols bgp 65000 neighbor 172.37.12.2 password 'VMware1!'`
-`set protocols bgp 65000 neighbor 172.37.12.2 timers holdtime 12`
-`set protocols bgp 65000 neighbor 172.37.12.2 timers keepalive 4`
-`set protocols bgp 65000 neighbor 172.37.12.3 remote-as 65001`
-`set protocols bgp 65000 neighbor 172.37.12.3 password 'VMware1!'`
-`set protocols bgp 65000 neighbor 172.37.12.3 timers holdtime 12`
-`set protocols bgp 65000 neighbor 172.37.12.3 timers keepalive 4`
+	set protocols bgp 65000 neighbor 172.37.11.2 remote-as 65001
+	set protocols bgp 65000 neighbor 172.37.11.2 password 'VMware1!'
+	set protocols bgp 65000 neighbor 172.37.11.2 timers holdtime 12
+	set protocols bgp 65000 neighbor 172.37.11.2 timers keepalive 4
+	set protocols bgp 65000 neighbor 172.37.11.3 remote-as 65001
+	set protocols bgp 65000 neighbor 172.37.11.3 password 'VMware1!'
+	set protocols bgp 65000 neighbor 172.37.11.3 timers holdtime 12
+	set protocols bgp 65000 neighbor 172.37.11.3 timers keepalive 4
+	set protocols bgp 65000 neighbor 172.37.12.2 remote-as 65001
+	set protocols bgp 65000 neighbor 172.37.12.2 password 'VMware1!'
+	set protocols bgp 65000 neighbor 172.37.12.2 timers holdtime 12
+	set protocols bgp 65000 neighbor 172.37.12.2 timers keepalive 4
+	set protocols bgp 65000 neighbor 172.37.12.3 remote-as 65001
+	set protocols bgp 65000 neighbor 172.37.12.3 password 'VMware1!'
+	set protocols bgp 65000 neighbor 172.37.12.3 timers holdtime 12
+	set protocols bgp 65000 neighbor 172.37.12.3 timers keepalive 4
 
-`set protocols bgp 65000 neighbor 172.27.11.2 soft-reconfiguration inbound`
-`set protocols bgp 65000 neighbor 172.27.11.3 soft-reconfiguration inbound`
-`set protocols bgp 65000 neighbor 172.27.12.2 soft-reconfiguration inbound`
-`set protocols bgp 65000 neighbor 172.27.12.3 soft-reconfiguration inbound`
+	set protocols bgp 65000 neighbor 172.27.11.2 soft-reconfiguration inbound
+	set protocols bgp 65000 neighbor 172.27.11.3 soft-reconfiguration inbound
+	set protocols bgp 65000 neighbor 172.27.12.2 soft-reconfiguration inbound
+	set protocols bgp 65000 neighbor 172.27.12.3 soft-reconfiguration inbound
 
-`set protocols bgp 65000 neighbor 172.37.11.2 soft-reconfiguration inbound`
-`set protocols bgp 65000 neighbor 172.37.11.3 soft-reconfiguration inbound`
-`set protocols bgp 65000 neighbor 172.37.12.2 soft-reconfiguration inbound`
-`set protocols bgp 65000 neighbor 172.37.12.3 soft-reconfiguration inbound`
+	set protocols bgp 65000 neighbor 172.37.11.2 soft-reconfiguration inbound
+	set protocols bgp 65000 neighbor 172.37.11.3 soft-reconfiguration inbound
+	set protocols bgp 65000 neighbor 172.37.12.2 soft-reconfiguration inbound
+	set protocols bgp 65000 neighbor 172.37.12.3 soft-reconfiguration inbound
 
 ## Create Blackhole Route(s) for the BGP Advertised Overlay Networks
 
-`set protocols static route 192.168.10.0/24 blackhole`
-`set protocols static route 192.168.11.0/24 blackhole`
-`set protocols static route 192.168.31.0/24 blackhole`
+	set protocols static route 192.168.10.0/24 blackhole
+	set protocols static route 192.168.11.0/24 blackhole
+	set protocols static route 192.168.31.0/24 blackhole
 
 ## Advertise the Management Networks
 
-`set protocols bgp 65000 network 172.16.11.0/24`
-``delete protocolsset protocols bgp 6500- network 172.17.11.0/24`
+	set protocols bgp 65000 network 172.16.11.0/24
+	delete protocolsset protocols bgp 6500- network 172.17.11.0/24
 
 ## Commit and Save Configuration.
 
-`commit ; save`
+	commit ; save
 
 # DELETE CONFIGURATION
 
 
-`configure`
+	configure
+	
+	delete protocols bgp 65000 parameters router-id 192.168.3.1
+	
+	delete protocols bgp 65000 neighbor 172.27.11.2 remote-as 65001
+	delete protocols bgp 65000 neighbor 172.27.11.2 password 'VMware1!'
+	delete protocols bgp 65000 neighbor 172.27.11.2 timers holdtime 12
+	delete protocols bgp 65000 neighbor 172.27.11.2 timers keepalive 4
+	delete protocols bgp 65000 neighbor 172.27.11.3 remote-as 65001
+	delete protocols bgp 65000 neighbor 172.27.11.3 password 'VMware1!'
+	delete protocols bgp 65000 neighbor 172.27.11.3 timers holdtime 12
+	delete protocols bgp 65000 neighbor 172.27.11.3 timers keepalive 4
+	delete protocols bgp 65000 neighbor 172.27.12.2 remote-as 65001
+	delete protocols bgp 65000 neighbor 172.27.12.2 password 'VMware1!'
+	delete protocols bgp 65000 neighbor 172.27.12.2 timers holdtime 12
+	delete protocols bgp 65000 neighbor 172.27.12.2 timers keepalive 4
+	delete protocols bgp 65000 neighbor 172.27.12.3 remote-as 65001
+	delete protocols bgp 65000 neighbor 172.27.12.3 password 'VMware1!'
+	delete protocols bgp 65000 neighbor 172.27.12.3 timers holdtime 12
+	delete protocols bgp 65000 neighbor 172.27.12.3 timers keepalive 4
 
-`delete protocols bgp 65000 parameters router-id 192.168.3.1`
+	delete protocols bgp 65000 neighbor 172.37.11.2 remote-as 65001
+	delete protocols bgp 65000 neighbor 172.37.11.2 password 'VMware1!'
+	delete protocols bgp 65000 neighbor 172.37.11.2 timers holdtime 12
+	delete protocols bgp 65000 neighbor 172.37.11.2 timers keepalive 4
+	delete protocols bgp 65000 neighbor 172.37.11.3 remote-as 65001
+	delete protocols bgp 65000 neighbor 172.37.11.3 password 'VMware1!'
+	delete protocols bgp 65000 neighbor 172.37.11.3 timers holdtime 12
+	delete protocols bgp 65000 neighbor 172.37.11.3 timers keepalive 4
+	delete protocols bgp 65000 neighbor 172.37.12.2 remote-as 65001
+	delete protocols bgp 65000 neighbor 172.37.12.2 password 'VMware1!'
+	delete protocols bgp 65000 neighbor 172.37.12.2 timers holdtime 12
+	delete protocols bgp 65000 neighbor 172.37.12.2 timers keepalive 4
+	delete protocols bgp 65000 neighbor 172.37.12.3 remote-as 65001
+	delete protocols bgp 65000 neighbor 172.37.12.3 password 'VMware1!'
+	delete protocols bgp 65000 neighbor 172.37.12.3 timers holdtime 12
+	delete protocols bgp 65000 neighbor 172.37.12.3 timers keepalive 4
 
-`delete protocols bgp 65000 neighbor 172.27.11.2 remote-as 65001`
-`delete protocols bgp 65000 neighbor 172.27.11.2 password 'VMware1!'`
-`delete protocols bgp 65000 neighbor 172.27.11.2 timers holdtime 12`
-`delete protocols bgp 65000 neighbor 172.27.11.2 timers keepalive 4`
-`delete protocols bgp 65000 neighbor 172.27.11.3 remote-as 65001`
-`delete protocols bgp 65000 neighbor 172.27.11.3 password 'VMware1!'`
-`delete protocols bgp 65000 neighbor 172.27.11.3 timers holdtime 12`
-`delete protocols bgp 65000 neighbor 172.27.11.3 timers keepalive 4`
-`delete protocols bgp 65000 neighbor 172.27.12.2 remote-as 65001`
-`delete protocols bgp 65000 neighbor 172.27.12.2 password 'VMware1!'`
-`delete protocols bgp 65000 neighbor 172.27.12.2 timers holdtime 12`
-`delete protocols bgp 65000 neighbor 172.27.12.2 timers keepalive 4`
-`delete protocols bgp 65000 neighbor 172.27.12.3 remote-as 65001`
-`delete protocols bgp 65000 neighbor 172.27.12.3 password 'VMware1!'`
-`delete protocols bgp 65000 neighbor 172.27.12.3 timers holdtime 12`
-`delete protocols bgp 65000 neighbor 172.27.12.3 timers keepalive 4`
+	delete protocols bgp 65000 neighbor 172.27.11.2 soft-reconfiguration
+	delete protocols bgp 65000 neighbor 172.27.11.3 soft-reconfiguration
+	delete protocols bgp 65000 neighbor 172.27.12.2 soft-reconfiguration
+	delete protocols bgp 65000 neighbor 172.27.12.3 soft-reconfiguration
 
-`delete protocols bgp 65000 neighbor 172.37.11.2 remote-as 65001`
-`delete protocols bgp 65000 neighbor 172.37.11.2 password 'VMware1!'`
-`delete protocols bgp 65000 neighbor 172.37.11.2 timers holdtime 12`
-`delete protocols bgp 65000 neighbor 172.37.11.2 timers keepalive 4`
-`delete protocols bgp 65000 neighbor 172.37.11.3 remote-as 65001`
-`delete protocols bgp 65000 neighbor 172.37.11.3 password 'VMware1!'`
-`delete protocols bgp 65000 neighbor 172.37.11.3 timers holdtime 12`
-`delete protocols bgp 65000 neighbor 172.37.11.3 timers keepalive 4`
-`delete protocols bgp 65000 neighbor 172.37.12.2 remote-as 65001`
-`delete protocols bgp 65000 neighbor 172.37.12.2 password 'VMware1!'`
-`delete protocols bgp 65000 neighbor 172.37.12.2 timers holdtime 12`
-`delete protocols bgp 65000 neighbor 172.37.12.2 timers keepalive 4`
-`delete protocols bgp 65000 neighbor 172.37.12.3 remote-as 65001`
-`delete protocols bgp 65000 neighbor 172.37.12.3 password 'VMware1!'`
-`delete protocols bgp 65000 neighbor 172.37.12.3 timers holdtime 12`
-`delete protocols bgp 65000 neighbor 172.37.12.3 timers keepalive 4`
+	delete protocols bgp 65000 neighbor 172.37.11.2 soft-reconfiguration
+	delete protocols bgp 65000 neighbor 172.37.11.3 soft-reconfiguration
+	delete protocols bgp 65000 neighbor 172.37.12.2 soft-reconfiguration
+	delete protocols bgp 65000 neighbor 172.37.12.3 soft-reconfiguration
 
-`delete protocols bgp 65000 neighbor 172.27.11.2 soft-reconfiguration`
-`delete protocols bgp 65000 neighbor 172.27.11.3 soft-reconfiguration`
-`delete protocols bgp 65000 neighbor 172.27.12.2 soft-reconfiguration`
-`delete protocols bgp 65000 neighbor 172.27.12.3 soft-reconfiguration`
+	delete protocols static route 192.168.10.0/24
+	delete protocols static route 192.168.11.0/24
+	delete protocols static route 192.168.31.0/24
 
-`delete protocols bgp 65000 neighbor 172.37.11.2 soft-reconfiguration`
-`delete protocols bgp 65000 neighbor 172.37.11.3 soft-reconfiguration`
-`delete protocols bgp 65000 neighbor 172.37.12.2 soft-reconfiguration`
-`delete protocols bgp 65000 neighbor 172.37.12.3 soft-reconfiguration`
+	commit ; save
 
-`delete protocols static route 192.168.10.0/24`
-`delete protocols static route 192.168.11.0/24`
-`delete protocols static route 192.168.31.0/24`
-
-`commit ; save`
-
-# Trouble`showoting
+# Troubleshooting
 
 ## Show BGP Neighboors and Advertised / Received Routes
 
-`showw ip bgp summary`
-`showw ip bgp`
-`showw ip bgp neighbors 172.27.11.2 advertised-routes`
-`showw ip bgp neighbors 172.27.11.2 received-routes`
-`showw ip bgp neighbors 172.27.12.2 advertised-routes`
-`showw ip bgp neighbors 172.27.12.2 received-routes`
-`showw ip bgp neighbors 172.37.11.2 advertised-routes`
-`showw ip bgp neighbors 172.37.11.2 received-routes`
-`showw ip bgp neighbors 172.37.12.2 advertised-routes`
-`showw ip bgp neighbors 172.37.12.2 received-routes`
+	show ip bgp summary
+	show ip bgp
+	show ip bgp neighbors 172.27.11.2 advertised-routes
+	show ip bgp neighbors 172.27.11.2 received-routes
+	show ip bgp neighbors 172.27.12.2 advertised-routes
+	show ip bgp neighbors 172.27.12.2 received-routes
+	show ip bgp neighbors 172.37.11.2 advertised-routes
+	show ip bgp neighbors 172.37.11.2 received-routes
+	show ip bgp neighbors 172.37.12.2 advertised-routes
+	show ip bgp neighbors 172.37.12.2 received-routes
 
 # Help
 
