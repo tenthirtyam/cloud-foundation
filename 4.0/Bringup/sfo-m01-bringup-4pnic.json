@@ -252,12 +252,12 @@
           "vmnic2",
           "vmnic3"
        ],
-       "mtu":9000,
+       "mtu": 9000,
        "networks":[
-          "UPLINK01",
-          "UPLINK02",
-          "NSXT_EDGE_TEP"
-       ]
+         "UPLINK01",
+         "UPLINK02"
+       ],
+       "isUsedByNsxt": true
      }
   ],
   "networkSpecs": [
