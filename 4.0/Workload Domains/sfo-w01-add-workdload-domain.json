@@ -9,7 +9,6 @@
         "gateway": "172.16.11.1",
         "subnetMask": "255.255.255.0"
   },
-  "licenseKey": "vcenter_server_license_key",
   "rootPassword": "vcenter_server_root_password",
   "datacenterName": "sfo-w01-dc01"
 },
