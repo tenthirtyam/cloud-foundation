@@ -114,10 +114,6 @@
 	delete protocols bgp 65000 neighbor 172.37.12.2 soft-reconfiguration
 	delete protocols bgp 65000 neighbor 172.37.12.3 soft-reconfiguration
 
-	delete protocols static route 192.168.10.0/24
-	delete protocols static route 192.168.11.0/24
-	delete protocols static route 192.168.31.0/24
-
 	commit ; save
 
 # Troubleshooting
