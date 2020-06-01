@@ -64,7 +64,6 @@
 ## Advertise the Management Networks
 
 	set protocols bgp 65000 network 172.16.11.0/24
-	delete protocolsset protocols bgp 6500- network 172.17.11.0/24
 
 ## Commit and Save Configuration.
 
