@@ -55,12 +55,6 @@
 	set protocols bgp 65000 neighbor 172.37.12.2 soft-reconfiguration inbound
 	set protocols bgp 65000 neighbor 172.37.12.3 soft-reconfiguration inbound
 
-## Create Blackhole Route(s) for the BGP Advertised Overlay Networks
-
-	set protocols static route 192.168.10.0/24 blackhole
-	set protocols static route 192.168.11.0/24 blackhole
-	set protocols static route 192.168.31.0/24 blackhole
-
 ## Advertise the Management Networks
 
 	set protocols bgp 65000 network 172.16.11.0/24
