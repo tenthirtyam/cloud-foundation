@@ -1,12 +1,5 @@
 # Tips
 
-
-## Cloud Builder
-### Reset VMaware Cloud Builder for reuse.
-Login to the Cloud Builder virtual appliance via SSH and run the following:
-
-	curl -X GET http://localhost:9080/bringup-app/bringup/sddcs/test/deleteAll
-
 ### Skip BGP Validation
 Bypass the BGP validation by modifying the JSON input specification. 
 
