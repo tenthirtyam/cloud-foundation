@@ -4,7 +4,7 @@
   "sddcManagerSpec": {
     "secondUserCredentials": {
       "userName": "vcf",
-      "password": "Vsddc_manager_vcf_password"
+      "password": "sddc_manager_vcf_password"
     },
     "ipAddress": "172.16.11.59",
     "netmask": "255.255.255.0",
